@@ -20,10 +20,23 @@ body {
     height: 100%;
 }
 body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     font-family: 'Roboto', 'Open Sans', sans-serif;
     -moz-font-smoothing: grayscale;
@@ -57,11 +70,13 @@ h2 {
     margin-top: 20px;
     -webkit-filter: url("#filter");
     filter: url("/#filter");
-    transition: .2s;
+    -webkit-transition: .2s;
+            transition: .2s;
 }
 #button:hover {
     background: #333;
-    transition: .2s;
+    -webkit-transition: .2s;
+            transition: .2s;
 }
 svg {
     height: 0;
